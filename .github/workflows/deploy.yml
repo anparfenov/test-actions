@@ -35,4 +35,4 @@ jobs:
         key: ${{ secrets.SSH2 }}
         passphrase: ${{ secrets.PASSPHRASE }}
         source: "/dist, index.html"
-        target: "/home/asleeppiano/test"
+        target: "/home/asleeppiano/test2"
