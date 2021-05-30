@@ -2,9 +2,9 @@ name: Test CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [ $default-branch ]
   pull_request:
-    branches: [ master ]
+    branches: [ $default-branch ]
 
 jobs:
   build:
@@ -34,5 +34,5 @@ jobs:
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.SSH2 }}
         passphrase: ${{ secrets.PASSPHRASE }}
-        source: "/dist, index.html"
-        target: "/home/asleeppiano/test2"
+        source: "./dist, index.html"
+        target: "/home/asleeppiano/test"
